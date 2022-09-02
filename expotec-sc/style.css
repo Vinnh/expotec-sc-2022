@@ -25,13 +25,13 @@ a {
     list-style: none;
     text-decoration: none;
     color: var(--gray-200);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
 .btn a {
     padding: 10px 20px;
-    border-radius: 50px;
+    border-radius: 10px;
     color: var(--white-200);
     background-color: var(--red);
     transition: .5s;
@@ -58,28 +58,47 @@ a {
     color: var(--red);
 }
 
-.home {
+#home .container {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+#home {
     padding: 60px 0px;
-    background-image: linear-gradient(rgba(202, 252, 214, 0.879),rgb(244, 197, 197)),url(imagens/bg-home.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.829),rgb(255, 255, 255)),url(imagens/bg-home.jpg);
     background-size: cover;
 }
 
-.tx-intro h1 span {
-    display: block;
-    color: var(--red);
+
+#home figure img{
+    width: 30%;
+}
+
+#home p{
+    padding: 8px 14px;
+    border-radius: 10px;
+    color: var(--white-200);
+    background-color: var(--green);
+    margin-bottom: 30px;
+}
+
+#home ion-icon {
+    font-size: 20px;
 }
 
 .tx-intro h1 {
-    max-width: 574px;
-    font-size: 40px;
+    max-width: 1200px;
+    font-size: 45px;
     line-height: 60px;
     color: var(--gray-200);
-    margin-bottom: 66px;
+    margin-bottom: 60px;
 }
 
 .tx-intro a {
-    padding: 16px 36px;
-    border-radius: 50px;
+    padding: 12px 26px;
+    border-radius: 10px;
     color: var(--white-200);
     background-color: var(--red);
     transition: .5s;
@@ -89,13 +108,13 @@ a {
     background-color: var(--red-dark);
 }
 
-figure img {
-    width: 500px;
-    height: 500px;
-}
-
 #sobre {
     padding: 66px 0px;
+}
+
+#sobre figure img {
+    width: 500px;
+    height: 500px;
 }
 
 .tx-sobre h1 {
@@ -114,7 +133,7 @@ figure img {
 
 .tx-sobre a {
     padding: 12px 26px;
-    border-radius: 50px;
+    border-radius: 10px;
     color: var(--white-200);
     background-color: var(--green);
     transition: .5s;
