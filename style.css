@@ -1,0 +1,258 @@
+@import url(variable.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 20px 0;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: var(--gray-200);
+    font-size: 18px;
+}
+
+
+.btn a {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: var(--red);
+    transition: .5s;
+}
+
+.btn a:hover {
+    background-color: var(--red-dark);
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    margin-right: 40px;
+
+}
+.menu ul li a {
+    transition: .5s;
+}
+
+.menu ul li a:hover {
+    color: var(--red);
+}
+
+#home .container {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+#home {
+    padding: 60px 0px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.829),rgb(255, 255, 255)),url(imagens/bg-home.jpg);
+    background-size: cover;
+}
+
+
+#home figure img{
+    width: 30%;
+}
+
+#home .data{
+    display: flex;
+    padding: 8px 14px;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: var(--green);
+    margin-bottom: 30px;
+}
+
+#home ion-icon {
+    margin-right: 3px ;
+    font-size: 20px;
+}
+
+.tx-intro h1 {
+    max-width: 1200px;
+    font-size: 45px;
+    line-height: 60px;
+    color: var(--gray-200);
+    margin-bottom: 60px;
+}
+
+.tx-intro a {
+    padding: 12px 26px;
+    border-radius: 10px;
+    color: var(--gray);
+    border: solid 2px var(--red);
+    background-color: none;
+    transition: .5s;
+}
+
+.tx-intro a:hover {
+    border: none;
+    background-color: var(--red);
+    color: var(--white);
+}
+
+#sobre {
+    padding: 66px 0px;
+}
+
+#sobre figure img {
+    width: 500px;
+    height: 500px;
+}
+
+.tx-sobre h1 {
+    font-size: 25px;
+    line-height: 40px;
+    color: var(--gray-200);
+    margin-bottom: 24px;
+}
+
+.tx-sobre p {
+    max-width: 500px;
+    line-height: 26px;
+    color: var(--gray);
+    margin-bottom: 28px;
+}
+
+.tx-sobre ion-icon {
+    font-size: 30px;
+    color: var(--green);
+}
+
+.tx-sobre ion-icon:hover {
+    color: var(--green-dark);
+}
+
+#orientacoes {
+    background-color: var(--green-light);
+    padding: 60px 0px;
+}
+
+#orientacoes figure img {
+    width: 500px;
+    height: 500px;
+}
+
+.cont-tx {
+    display: flex;
+    flex-direction: column;
+}
+
+.tx-orient:last-child{
+    margin-top: 30px;
+}
+
+.tx-orient h1 {
+    font-size: 25px;
+    line-height: 40px;
+    color: var(--gray-200);
+    margin-bottom: 24px;
+}
+
+.tx-orient p {
+    max-width: 444px;
+    line-height: 26px;
+    color: var(--gray);
+    margin-bottom: 28px;
+}
+
+.btns {
+    display: flex;
+    justify-content: first baseline;
+}
+
+.btn-1 a {
+    padding: 12px 26px;
+    border-radius: 10px;
+    color: var(--white);
+    background-color: var(--green);
+    transition: .5s;
+
+}
+
+.btn-1 a:hover {
+    background-color: var(--green-dark);
+}
+
+.btn-2 a{
+    margin-left: 10px;
+    padding: 12px 26px;
+    border-radius: 10px;
+    color: var(--gray);
+    border: solid 2px var(--green);
+    background-color: none;
+    transition: .5s;
+}
+
+.btn-2 a:hover {
+    border: none;
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.datas {
+    padding: 60px 0;
+}
+
+.datas .container {
+    flex-direction: column;
+}
+
+.container-datas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.dat {
+    width: 250px;
+    text-align: left;
+    margin: 20px 60px;
+    padding: 20px 10px;
+    background-color: var(--green-light);
+    border-radius: 10px;
+}
+
+.dat .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px 10px;
+    background-color: var(--green);
+    align-items: center;
+    text-align: center;
+
+}
+
+.dat ion-icon {
+    font-size: 30px;
+    color: var(--white);
+}
+
+footer .container {
+    flex-direction: column;
+}
+
