@@ -1,5 +1,8 @@
 @import url(variable.css);
 
+
+/* configurações padrão para todo o arquibo */
+
 * {
     padding: 0;
     margin: 0;
@@ -17,8 +20,20 @@
     align-items: center;
 }
 
+
+/**************** MENU SUPERIOR *****************/
+
 header {
-    padding: 20px 0;
+    padding: 20px 0px;
+}
+
+nav {
+    margin: auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 a {
@@ -57,6 +72,12 @@ a {
 .menu ul li a:hover {
     color: var(--red);
 }
+
+.hamburger {
+    display: none;
+}
+
+/**************** TELA INICIAL - HOME *****************/
 
 #home .container {
     justify-content: center;
@@ -113,13 +134,16 @@ a {
     color: var(--white);
 }
 
+
+/**************** TELA SOBRE O EVENTO *****************/
+
 #sobre {
     padding: 66px 0px;
 }
 
 #sobre figure img {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
 }
 
 .tx-sobre h1 {
@@ -145,43 +169,89 @@ a {
     color: var(--green-dark);
 }
 
+
+/**************** SEÇÃO O QUE TERÁ NO EVENTO *****************/
+
+.events .container {
+    flex-direction: column;
+}
+
+.events .title {
+    margin-bottom: 80px;
+}
+
+.container-events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-events img {
+    width: 150px;
+    height: 150px;
+}
+
+.single-events {
+    width: 200px;
+    height: 200px;
+    margin: 0 15px 105px 15px;
+    background: var(--white-200);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.single-events .pizza {
+    position: relative;
+    top: -60px;
+}
+
+.ds-events {
+    text-align: center;
+    position: relative;
+    bottom: 45px;
+}
+
+.ds-events h3 {
+    color: var(--gray-200);
+}
+
+
+
+/**************** TELA COM ORIENTAÇÕES *****************/
+
 #orientacoes {
     background-color: var(--green-light);
     padding: 60px 0px;
 }
 
-#orientacoes figure img {
-    width: 500px;
-    height: 500px;
-}
-
-.cont-tx {
+.container-orient {
     display: flex;
     flex-direction: column;
 }
 
-.tx-orient:last-child{
-    margin-top: 30px;
-}
-
-.tx-orient h1 {
+.orient-sub h1, .orient-ava h1 {
     font-size: 25px;
     line-height: 40px;
     color: var(--gray-200);
     margin-bottom: 24px;
 }
 
-.tx-orient p {
+.orient-sub p, .orient-ava p {
     max-width: 444px;
     line-height: 26px;
     color: var(--gray);
     margin-bottom: 28px;
 }
 
-.btns {
-    display: flex;
-    justify-content: first baseline;
+
+.orient-ava {
+    margin-top: 40px;
 }
+
 
 .btn-1 a {
     padding: 12px 26px;
@@ -196,18 +266,30 @@ a {
     background-color: var(--green-dark);
 }
 
-.btn-2 a{
-    margin-left: 10px;
-    padding: 12px 26px;
+.downloads {
+    display: flex;
+    flex-direction: column;
+}
+
+.dow {
+    margin-top: 20px;
+}
+
+.dow a{
+    padding: 8px 15px;
     border-radius: 10px;
-    color: var(--gray);
-    border: solid 2px var(--green);
-    background-color: none;
+    color: var(--green);
+    background-color: var(--white);
+    transition: .5s;
+    align-items: center;
     transition: .5s;
 }
 
-.btn-2 a:hover {
-    border: none;
+.dow ion-icon {
+    font-size: 20px;
+}
+
+.dow a:hover {
     background-color: var(--green);
     color: var(--white);
 }
@@ -252,7 +334,166 @@ a {
     color: var(--white);
 }
 
-footer .container {
-    flex-direction: column;
+/**************** MENU RESPONSIVO *****************/
+
+@media (max-width: 1000px) {
+    #sobre .container {
+        flex-direction: column-reverse;
+    }  
+
+    .tx-sobre p {
+        max-width: 700px;
+    }
+
+    #orientacoes .container {
+        flex-direction: column;
+    }
+
+    .orient-sub, .orient-ava {
+        text-align: center;
+    }
+
+    .downloads {
+        text-align: center;
+        margin-top: 50px;
+    }
 }
 
+
+@media (max-width: 800px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        background-color: var(--red);
+        padding: 16px 32px;
+        border-bottom: 3px solid var(--red-dark);
+    }
+    
+    .logo {
+        color: var(--white);
+    }
+    
+    .hamburger {
+        display: block;
+        position: relative;
+        z-index: 1;
+    
+        user-select: none;
+    
+        appearance: none;
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+    }
+    
+    .hamburger span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+    
+        background-color: var(--white);
+        border-radius: 6px;
+        z-index: 1;
+    
+        transform-origin: 0 0;
+    
+        transition: .4s;
+    }
+    
+    .hamburger:hover span:nth-child(2) {
+        transform: translateX(10px);
+        background-color: var(--red-light);
+    }
+    
+    .hamburger.is-active span:nth-child(1) {
+        transform: translate(0px, -2px) rotate(45deg);
+    }
+    
+    .hamburger.is-active span:nth-child(2) {
+        opacity: 0;
+        transform: translateX(15px);
+    }
+    
+    .hamburger.is-active span:nth-child(3) {
+        transform: translate(-3px, 3px) rotate(-45deg);
+    }
+    
+    .hamburger.is-active:hover span {
+         background-color: var(--red-light);
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .btn {
+        display: none;
+    }
+    
+    .menu.menu.is-active {
+        display: flex;
+    }
+
+    .menu.is-active ul{
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        background-color: var(--white);
+        left: 0;
+        top: 60px;
+        width: 100%;
+        height: calc(50% - 60px);
+        overflow-y: auto;
+    }
+
+    .menu.is-active ul li {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 650px) {
+    .tx-intro h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .data {
+        padding: 5px 7px;
+    }
+}
+
+@media (max-width: 550px) {
+    #sobre figure img {
+        width: 500px;
+        height: 500px;
+      }
+
+      .dow a {
+        font-size: 15px;
+      }
+
+      .dow ion-icon {
+        font-size: 15px;
+      }
+}
+
+@media (max-width: 457px) {
+    #sobre figure img {
+        width: 400px;
+        height: 400px;
+      }
+
+      .dow a {
+        font-size: 12px;
+      }
+
+      .dow ion-icon {
+        font-size: 10px;
+      }
+}

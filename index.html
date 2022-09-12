@@ -17,9 +17,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <nav class="container">
+        <nav>
             <a href="#" class="logo">Expotec</a>
             <div class="menu">
                 <ul>
@@ -42,6 +41,12 @@
             <a class="sub" href="">Submeter</a>                
             </div>
 
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
 
         </nav>
     </header>
@@ -49,7 +54,7 @@
     <main>
         <section class="home" id="home">
             <div class="container">
-
+                
                 <figure>
                     <img src="imagens/logo.png" alt="">
                 </figure>
@@ -64,7 +69,7 @@
                         “Os Desafios da Educação, Ciência e Tecnologia para Redução das Desigualdades na Era Digital”
                     </h1>
 
-                    <a href="#sobre">saiba mais</a>
+                    <a href="#sobre">Saiba mais</a>
                 </div>
 
             </div>
@@ -75,12 +80,18 @@
                 <div class="tx-sobre">
                     <h1>Sobre a expotec 2022</h1>
                 
-                    <p> A Exposição Científica, Tecnológica e Cultural ( EXPOTEC ) é um evento promovido pelo Instituto Federal de Educação,
-                        Ciência e Tecnologia do Rio Grande do Norte, campus Santa Cruz, cujo objetivo é promover a partilha de conhecimentos
-                        e experiências provenientes de trabalhos acadêmicos desenvolvidos por estudantes e servidores.
+                    <p> A Exposição Científica, Tecnológica e Cultural – EXPOTEC é um evento promovido pelo Instituto
+                        Federal de Educação, Ciência e Tecnologia do Rio Grande do Norte, campus Santa Cruz, cujo objetivo
+                        é promover a partilha de conhecimentos e experiências provenientes de projetos de pesquisa, ensino
+                        e extensão desenvolvidos por estudantes e servidores ao longo do ano de 2022.
                         <br> <br>
-                        Neste ano, a 11ª Edição da EXPOTEC celebrará o tema <strong>“Os Desafios da Educação, Ciência e Tecnologia
-                        para Redução das Desigualdades na Era Digital”</strong>
+
+                        Neste ano, a 11ª Edição da EXPOTEC celebrará o tema <strong>“Os desafios da Educação, Ciência e Tecnologia para
+                        redução das desigualdades na era digital”</strong>, cujo objetivo é discutir os desafios e as contribuições das
+                        diversas áreas do conhecimento frente ao mundo digital cada vez mais presente no cotidiano das pessoas,
+                        especialmente após o advento da pandemia.
+
+
                     </p>
 
                     <a target="_blank" href="https://www.instagram.com/ifrnsantacruz/"><ion-icon name="logo-instagram"></ion-icon></a>
@@ -93,50 +104,113 @@
             </div>
         </section>
 
-        <section id="orientacoes">
+        <section class="events">
             <div class="container">
-                <div class="cont-tx">
-                    <div class="tx-orient">
-                        <h1>Submeta o seu trabalho!</h1>
-                    
-                        <p>Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum amet vitae et etiam
-                            nec. Varius volutpat hac adipiscing tincidunt pretium.</p>
-    
-    
-                        <div class="btns">
-    
-                        <div class="btn-1">
-                        <a href="#">submeta aqui</a>                        
-                        </div>
-    
-    
-                        <div class="btn-2">
-                            <a href="#">Modelos oficiais</a>
-                        </div>                        
-                        </div>
-    
-    
-                    </div>
-    
-                    <div class="tx-orient">
-                        <h1>seja avaliador</h1>
-                    
-                        <p>Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum amet vitae et etiam
-                            nec. Varius volutpat hac adipiscing tincidunt pretium.</p>
-    
-    
-                        <div class="btns">
-    
-                        <div class="btn-1">
-                        <a href="#">inscreva-se aqui</a>                        
-                        </div>   
-    
-                        </div>
-    
-                    </div>
+                <div class="title">
+                    <h1>o evento contará com</h1>
                 </div>
 
-                <figure><img src="imagens/Brainstorming session _Monochromatic.svg""></figure>
+                <div class="container-events">
+                    <div class="single-events">
+                      <img src="imagens/img1.png" class="pizza">
+                      <div class="ds-events">
+                        <h3>Mostra tecnológica</h3>
+
+                      </div>
+                    </div>
+                    <div class="single-events">
+                        <img src="imagens/img2.png" class="pizza">
+                        <div class="ds-events">
+                          <h3>Mostra de banners</h3>
+
+                        </div>
+                      </div>
+                      <div class="single-events">
+                        <img src="imagens/img3.png" class="pizza">
+                        <div class="ds-events">
+                          <h3>Comunicações orais</h3>
+
+                        </div>
+                      </div>
+                      <div class="single-events">
+                        <img src="imagens/img4.png" class="pizza">
+                        <div class="ds-events">
+                          <h3>Mostra de física</h3>
+
+                        </div>
+                      </div>
+                      <div class="single-events">
+                        <img src="imagens/img5.png" class="pizza">
+                        <div class="ds-events">
+                          <h3>Mostra de humanidades</h3>
+
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="orientacoes">
+            <div class="container">
+
+                <div class="container-orient">
+
+                    <div class="orient-sub">
+
+                        <h1>Submeta aqui o seu trabalho!</h1>
+                    
+                        <p>Realize a inscrição do seu trabalho clicando no botão abaixo. Lembre-se de enviar o resumo expandido conforme o modelo disponibilizado pelo evento.</p>
+                            
+                            <div class="btn-1">
+                                <a href="#">Submeter</a>                        
+                            </div>
+
+                    </div>
+
+                    <div class="orient-ava">
+
+                        <h1>Seja avaliador!</h1>
+                    
+                        <p>Caso queira contribuir com a avaliação dos trabalhos da Expotex, clique no botão abaixo e inscreva-se.</p>
+                            
+                            <div class="btn-1">
+                                <a href="#">Inscreva-se</a>                        
+                            </div>
+
+                    </div>
+
+    
+                </div>
+
+                <div class="downloads">
+
+                    <div class="title">
+                        <h2>Normas e modelos oficiais</h1>
+                    </div>
+
+                    <div class="dow">
+                        <a href="#"><ion-icon name="download"></ion-icon> Normas de apresentação</a>
+                    </div>
+                    <div class="dow">
+                        <a href="#"><ion-icon name="download"></ion-icon> Normas de submissão do resumo expandido</a>
+                    </div>
+                    <div class="dow">
+                        <a href="#"><ion-icon name="download"></ion-icon> Modelo de resumo expandido</a>
+                    </div>
+                    <div class="dow">
+                        <a href="#"><ion-icon name="download"></ion-icon> Modelo de slides para apresentação</a>
+                    </div>
+                    <div class="dow">
+                        <a href="#"><ion-icon name="download"></ion-icon> Modelo de banner para apresentação</a>
+                    </div>
+                    <div class="dow">
+                        <a href="#"><ion-icon name="download"></ion-icon> Ficha de avaliação das apresentações orais</a>
+                    </div>
+                    <div class="dow">
+                        <a href="#"><ion-icon name="download"></ion-icon> Ficha de avaliação do resumo expandido</a>
+                    </div>
+                </div>    
+
             </div>
         </section>
 
@@ -190,6 +264,8 @@
             </div>
         </section>
     </main>
+
+    <script src="main.js"></script>
 
 </body>
 </html>

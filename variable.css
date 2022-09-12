@@ -4,8 +4,9 @@
     --green-light: #e1fadf;
     --red: #e15554;
     --red-dark: #d33a3a;
-    --red-light: #ee8787;
+    --red-light: #f9b6b6;
     --white: #FFFFFF;
+    --white-200: rgb(239, 239, 239);
     --gray: #6E7275;
     --gray-200: #293145;
 }
