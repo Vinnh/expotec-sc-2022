@@ -204,7 +204,7 @@ a {
     z-index: 1;
 }
 
-.single-events .pizza {
+.single-events .event {
     position: relative;
     top: -60px;
 }
@@ -359,6 +359,37 @@ a {
     }
 }
 
+.comissao .container {
+    flex-direction: column;
+}
+
+.comissao {
+    background-color: var(--white-200);
+}
+
+.comissao h1 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.com h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-width: 300px;
+    color: var(--green);
+}
+
+.com {
+    margin-top: 30px;
+}
+
+.container-comissao {
+    display: flex;
+}
+
+.com {
+    padding: 20px 20px;
+}
 
 @media (max-width: 800px) {
     nav {
@@ -454,6 +485,10 @@ a {
 
     .menu.is-active ul li {
         margin-top: 30px;
+    }
+    
+    .container-comissao {
+        flex-direction: column;
     }
 }
 
