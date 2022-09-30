@@ -135,6 +135,8 @@ a {
 }
 
 
+
+
 /**************** TELA SOBRE O EVENTO *****************/
 
 #sobre {
@@ -151,6 +153,7 @@ a {
     line-height: 40px;
     color: var(--gray-200);
     margin-bottom: 24px;
+    text-align: center;
 }
 
 .tx-sobre p {
