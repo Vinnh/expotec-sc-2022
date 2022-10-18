@@ -608,3 +608,10 @@ a {
         font-size: 10px;
       }
 }
+
+.link-icon {
+    display: flex;
+    align-items: center;
+
+    gap: .3rem;
+}
