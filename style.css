@@ -365,6 +365,7 @@ a {
     line-height: 26px;
     color: var(--gray);
     margin-bottom: 28px;
+    text-align: justify;
 }
 
 .tx-ofi-min a {
@@ -405,11 +406,6 @@ a {
     line-height: 26px;
     color: var(--gray);
     margin-bottom: 28px;
-}
-
-.btn-nc {
-    display: flex;
-    justify-content: space-evenly
 }
 
 .tx-noite-cultural a {
