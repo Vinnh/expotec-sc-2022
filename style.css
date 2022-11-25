@@ -513,6 +513,76 @@ a {
     height: 40%;
 }
 
+/* PROGRAMAÇÃO */
+
+.container-program {
+    display: flex;
+}
+
+.dia {
+    display: flex;
+    flex-direction: column;
+}
+
+.prog {
+    width: 350px;
+    display: flex;
+    gap: 10px;
+    text-align: left;
+    margin: 20px 60px;
+    padding: 20px 10px;
+    background-color: var(--red-dark);
+    border-radius: 10px;
+}
+
+.prog h3, .prog p {
+    color: var(--white);
+}
+
+.prog .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px 10px;
+    background-color: var(--red);
+    align-items: center;
+    text-align: center;
+
+}
+
+.prog ion-icon {
+    font-size: 30px;
+    color: var(--white);
+}
+
+.evento {
+    display: flex;
+    gap: 10px;
+}
+
+.text-prog {
+    max-width: 246px;
+    text-align: justify;
+    margin-bottom: 10px
+}
+
+.hora {
+    width: 140px;
+    height: 40px;
+    padding: 5px 10px;
+    background-color: var(--red-dark);
+    color: #fff;
+}
+
+
+@media (max-width: 900px) {
+    .container-program {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 @media (max-width: 800px) {
     nav {
         position: fixed;
