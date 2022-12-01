@@ -426,6 +426,52 @@ a {
     height: 500px;
 }
 
+#humanidades {
+    background-color: var(--white);
+    padding: 60px 0;
+}
+
+.tx-humanidades h1 {
+    font-size: 25px;
+    line-height: 40px;
+    color: var(--gray-200);
+    margin-bottom: 24px;
+    margin-top: 30px;
+}
+
+.tx-humanidades p {
+    max-width: 444px;
+    line-height: 26px;
+    color: var(--gray);
+    margin-bottom: 28px;
+}
+
+.tx-humanidades a {
+    padding: 12px 26px;
+    border-radius: 10px;
+    color: var(--white-200);
+    background-color: var(--red);
+    transition: .5s;
+
+}
+
+.tx-humanidades a:hover {
+    background-color: var(--red-dark);
+}
+
+.figura-1 figure img {
+    width: 500px;
+    height: 500px;
+}
+
+.btn-h a{
+    background-color: var(--green);
+    transition: .5s;
+}
+
+.btn-h a:hover{
+    background-color: var(--green-dark);
+}
 
 /**************** MENU RESPONSIVO *****************/
 
@@ -462,6 +508,10 @@ a {
 
     #noite-cultural .container {
         flex-direction: column;
+    }  
+
+    #humanidades .container {
+        flex-direction: column-reverse;
     }  
 
     .figura-1 figure img {
@@ -572,6 +622,10 @@ a {
     padding: 5px 10px;
     background-color: var(--red-dark);
     color: #fff;
+}
+
+h4 {
+    margin-bottom: 10px;
 }
 
 
@@ -736,6 +790,16 @@ a {
 
       .btn-nc a{
         text-align: center;
+      }
+
+      .evento {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
+      .prog {
+        width: 300px;
       }
 
 }
