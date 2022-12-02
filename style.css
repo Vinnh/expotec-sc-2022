@@ -473,6 +473,11 @@ a {
     background-color: var(--green-dark);
 }
 
+.mg-locais {
+    margin-top: 30px;
+}
+
+
 /**************** MENU RESPONSIVO *****************/
 
 @media (max-width: 1000px) {
